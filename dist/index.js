@@ -20,11 +20,6 @@ const fs_1 = require("fs");
 const firebase_admin_1 = __importDefault(require("firebase-admin"));
 // Initialize Firebase
 const firebaseServiceAccount = JSON.parse((0, fs_1.readFileSync)('./config/firebaseServiceAccountKey.json', 'utf-8'));
-console.log({ firebaseServiceAccount, admin: firebase_admin_1.default });
-// admin.initializeApp({
-//   credential: admin.credential.cert(firebaseServiceAccount),
-// });
-// var admin = require("firebase-admin");
 firebase_admin_1.default.initializeApp({
     credential: firebase_admin_1.default.credential.cert(firebaseServiceAccount)
 });

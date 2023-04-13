@@ -26,7 +26,7 @@ npm install
 4. Start the subgraph server:
 
 ```
-npm run dev
+npm start
 ```
 The subgraph server should now be running on http://localhost:4001/.
 
